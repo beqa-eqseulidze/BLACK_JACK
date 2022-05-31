@@ -175,13 +175,19 @@ function addCard(){
         
 
 
+let compResult=0;
+let playerResult=0;
 function openCard(){
     document.getElementById('compCardFirst').src=computerCard[0][3];
     let status=comparsion(computerCard,playerCard)
     if (status==='1'){
         document.getElementById('status').innerHTML='YOU LOSE'
+         compResult++
+        document.getElementById('comp-result').innerHTML=compResult;
     }else if(status=='2'){
         document.getElementById('status').innerHTML='YOU WIN'
+        playerResult++
+        document.getElementById('player-result').innerHTML=playerResult;
     }else{
         document.getElementById('status').innerHTML='EQUAL'
     }

@@ -1,2 +1,3 @@
 # BLACK_JACK
-BLACK JACK PAME 
+BLACK JACK GAME using javascript
+
