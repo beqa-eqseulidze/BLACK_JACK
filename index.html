@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#main{
+            border:1px solid red;
+            max-width:700px;
+            min-height: 700px;
+            margin:10px auto;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+         
+         }
+        div.buttons{
+            padding:10px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border: 1px solid red;
+
+            }
+        div.status{
+            justify-content: space-between;
+            }
+        button{
+            cursor:pointer;
+            width:150px;
+            height:35px;
+            border:none;
+            background-color:greenyellow;
+            font-size:20px;
+            font-weight:700;            
+            margin-left:30px;   
+            border-radius:10px;        
+        }
+        button:hover{
+        transform:scale(1.05);
+        background-color: rgb(70, 97, 30);  
+        color:white;      
+        }
+        div.desk{
+            min-height:200px;
+            border: 1px solid red;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+
+        }
+        img{
+            width:80px;
+            height:120px;
+            margin:2px;
+            border-radius:5px;
+        }
+        
+    </style>
+ 
+</head>
+<body>
+
+    <div id="main">        
+        <div  class="desk" id="computer"> </div>
+        <div class="desk"  id="deck">
+            <img src="./cards/background .png" alt="">
+        </div>
+        <div class="buttons status"> <span Id="your-score"></span> <p id="status"> </p><span Id="comp-score"></span>  </div>
+        <div  class="desk" id="player"> </div>
+        <div class="buttons">
+            <button id="start" onclick="satartGame()" >Start Game</button>
+            <button id="add-card" onclick="addCard()" >Add Card</button>            
+            <button calss="button"  onclick="openCard()" >Open Cards</button>
+        </div>
+    </div>
+            
+        
+
+          
+
+    
+    <script src="./EXERCISE.js"></script>
+</body>
+</html>
